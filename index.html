@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Syne+Mono&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* css reset */
+        body {
+            font-family: 'Fredoka', sans-serif;
+            margin: 0px;
+            padding: 0px;
+            background: url('imagess/practicegym.jpg');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            color: white
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 34px;
+            top: 10px;
+        }
+
+        .mid {
+
+            display: block;
+            width: 55%;
+            /* border: 2px solid rgb(8, 165, 21); */
+            margin: 16px auto;
+        }
+
+        .right {
+            display: inline-block;
+            /* border: 2px solid rgb(176, 189, 61); */
+            position: absolute;
+            right: 34px;
+            top: 20px;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 30px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: yellow;
+        }
+
+        .left img {
+            width: 75px;
+            height: 100px;
+            ;
+
+        }
+
+        .left div {
+            text-align: center;
+            font-size: 15px;
+            color: aqua;
+        }
+
+        .btn {
+            margin: 0px 5px;
+            background-color: black;
+            color: white;
+            padding: 5px 8px;
+            border: 2px solid rgb(33, 108, 110);
+            border-radius: 10px;
+            cursor: pointer;
+
+        }
+
+        .btn:hover {
+            background-color: rgb(66, 134, 112);
+        }
+
+        .container {
+            border: 2px solid red;
+            margin: 110px 48px;
+            padding: 40px 67px;
+            border-radius: 25px;
+        }
+
+        .formgroup input {
+            text-align: center;
+            width: 360px;
+            display: block;
+            padding: 6px;
+            border: 2px solid black;
+            margin: 2px auto;
+            font-size: 15px;
+            border-radius: 10px;
+            ;
+
+        }
+
+        .formgroup label {
+            text-align: center;
+            display: block;
+            padding: 6px;
+            margin: 2px auto;
+            color: black;
+            font-style: italic;
+        }
+        .container h1{
+            text-align :center;
+            color:white;
+            background-color: black;
+        }
+        .container button{
+            display: block;
+            width: 150px;
+            margin: 25px auto;
+            padding :13px 2px;
+            font-size: 18px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <center><img src="imagess/btslogo.jpg" alt=""></center>
+            <div>Chahana's Gym</div>
+        </div>
+
+        <!-- mid box for navbar -->
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">
+                Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Your chance to join the best gym now</h1>
+        <form action="noaction.php">
+            <div class="formgroup">
+                <label for="name">Name</label>
+                <input type="text" name="name" placeholder="enter your name" id="name">
+            </div>
+            <div class="formgroup">
+                <label for="age">Age</label>
+                <input type="text" name="age" placeholder="enter your age" id="age">
+            </div>
+            <div class="formgroup">
+                <label for="gender">Gender</label>
+                <input type="text" name="gender" placeholder="enter your gender" id="gender">
+            </div>
+            <div class="formgroup">
+                <label for="locality">Locality</label>
+                <input type="text" name="locality" placeholder="enter your locality" id="locality">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
